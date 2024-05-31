@@ -10,15 +10,15 @@
       window.location = "../../notfound.html";
     } else {
       localStorage.setItem('visitedH5', true);
-      if(window.innerWidth > 768){
-        // console.log(window.innerWidth);
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      if (!(/android/i.test(userAgent) || (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream))) {
         window.location = "../index.html"
       }
     }
-    
+
   </script>
 
-  
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <style class="vjs-styles-defaults">
     .video-js {
@@ -34,14 +34,11 @@
   <meta data-n-head="ssr" name="renderer" content="webkit">
   <meta data-n-head="ssr" name="format-detection" content="telephone=no">
   <meta data-n-head="ssr" name="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <meta data-n-head="ssr" name="description"
-    content="iToken HD is a professional HD.">
+  <meta data-n-head="ssr" name="description" content="iToken HD is a professional HD.">
   <meta data-n-head="ssr" name="keywords" content="iToken HD,iToken HD,iToken HD,DApp,Bitcoin,Ethereum,EOS,TRON">
   <meta data-n-head="ssr" name="Language" content="en-US">
-  <meta data-n-head="ssr" property="og:title"
-    content="iToken HD | A Secure Web 3.0">
-  <meta data-n-head="ssr" property="og:description"
-    content="iToken HD is a professional HD.">
+  <meta data-n-head="ssr" property="og:title" content="iToken HD | A Secure Web 3.0">
+  <meta data-n-head="ssr" property="og:description" content="iToken HD is a professional HD.">
   <meta data-n-head="ssr" property="og:url" content="https://www.itoken.com">
   <meta data-n-head="ssr" property="og:locale" content="en-US">
   <meta data-n-head="ssr" property="og:image" content="https://www.itoken.com/thumbnail.png">
@@ -5036,15 +5033,13 @@
             src="./index_files/thumbnail.png" alt=""></div>
         <div>
           <div class="en">
-            <div
-              android-download="#">
+            <div android-download="#">
               <div data-v-40dd17ea="">
                 <div class="header-bar-con header-bar-mobile" data-v-40dd17ea="">
                   <div class="header-bar-content" data-v-40dd17ea="">
-                    <div class="nav-screen" data-v-40dd17ea=""><a href="../next/index.html"
-                        aria-current="page" class="header_logo nuxt-link-exact-active nuxt-link-active"
-                        data-v-40dd17ea=""><img alt="iToken HD" src="./index_files/logo.05577e5.png"
-                          data-v-40dd17ea=""></a>
+                    <div class="nav-screen" data-v-40dd17ea=""><a href="../next/index.html" aria-current="page"
+                        class="header_logo nuxt-link-exact-active nuxt-link-active" data-v-40dd17ea=""><img
+                          alt="iToken HD" src="./index_files/logo.05577e5.png" data-v-40dd17ea=""></a>
                       <div class="right" data-v-40dd17ea="">
                         <div class="nav-btn" data-v-40dd17ea=""><img alt=""
                             src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgb3BhY2l0eT0iMC4wMSIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMSIgZmlsbD0iIzIxMkQ0MyIvPgo8cmVjdCB5PSIxIiB3aWR0aD0iMTYiIGhlaWdodD0iMiIgcng9IjEiIGZpbGw9IiMyMTJENDMiLz4KPHJlY3QgeT0iNyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjIiIHJ4PSIxIiBmaWxsPSIjMjEyRDQzIi8+CjxyZWN0IHk9IjEzIiB3aWR0aD0iMTYiIGhlaWdodD0iMiIgcng9IjEiIGZpbGw9IiMyMTJENDMiLz4KPC9zdmc+Cg=="
@@ -5058,14 +5053,12 @@
                                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgb3BhY2l0eT0iMC4wMSIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMSIgZmlsbD0iIzIxMkQ0MyIvPgo8cmVjdCB4PSIxIiB5PSIxMy43MjgiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyIiByeD0iMSIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ1IDEgMTMuNzI4KSIgZmlsbD0iIzIxMkQ0MyIvPgo8cmVjdCB3aWR0aD0iMTgiIGhlaWdodD0iMiIgcng9IjEiIHRyYW5zZm9ybT0ibWF0cml4KC0wLjcwNzEwNyAtMC43MDcxMDcgLTAuNzA3MTA3IDAuNzA3MTA3IDE1LjE0MjEgMTMuNzI4KSIgZmlsbD0iIzIxMkQ0MyIvPgo8L3N2Zz4K"
                                 data-v-40dd17ea=""></div>
                           </div>
-                          <div class="nav-items" data-v-40dd17ea=""><a href="#"
-                              aria-current="page" class="nav-item nuxt-link-exact-active nuxt-link-active"
-                              data-v-40dd17ea="">
+                          <div class="nav-items" data-v-40dd17ea=""><a href="#" aria-current="page"
+                              class="nav-item nuxt-link-exact-active nuxt-link-active" data-v-40dd17ea="">
                               Features</a></div>
-                          <div class="link-title" data-v-40dd17ea=""><a data-event="C_Twitter"
-                              href="#" target="_blank" data-v-40dd17ea=""><img
-                                src="./index_files/p-t.97a0a69.svg" class="contact-items" data-v-40dd17ea=""></a> <a
-                              data-event="C_Facebook" href="#" target="_blank"
+                          <div class="link-title" data-v-40dd17ea=""><a data-event="C_Twitter" href="#" target="_blank"
+                              data-v-40dd17ea=""><img src="./index_files/p-t.97a0a69.svg" class="contact-items"
+                                data-v-40dd17ea=""></a> <a data-event="C_Facebook" href="#" target="_blank"
                               data-v-40dd17ea=""><img
                                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1LjMzMzMgMC4yNDg1MDVMMTQuMTYzOSAxLjM2OTIxQzE0LjA2MTYgMS40NDcxOCAxNC4wMTI4IDEuNTczODcgMTQuMDMyMyAxLjY5NTY4VjkuOTQ1MDdDMTQuMDEyOCAxMC4wNzE4IDE0LjA2MTYgMTAuMTk4NCAxNC4xNjM5IDEwLjI3MTVMMTUuMzA5IDExLjM5MjJWMTEuNjQwOEg5LjU1OTI0VjExLjQwMkwxMC43NDMzIDEwLjI1MkMxMC44NjAyIDEwLjEzNTEgMTAuODYwMiAxMC4xMDEgMTAuODYwMiA5LjkyNTU4VjMuMjU0OTNMNy41NjYzMiAxMS42MTY0SDcuMTIyOTFMMy4yODgxNCAzLjI1NDkzVjguODU4NDdDMy4yNTQwMyA5LjA5MjM2IDMuMzM2ODcgOS4zMzExMiAzLjUwMjU0IDkuNTAxNjZMNS4wNDIyOSAxMS4zNjc5VjExLjYxNjRIMC42NjY2NTZWMTEuMzY3OUwyLjIwNjQxIDkuNTAxNjZDMi4zNzIwOCA5LjMzMTEyIDIuNDQ1MTcgOS4wOTIzNiAyLjQwNjE5IDguODU4NDdWMi4zNzc4NUMyLjQyNTY4IDIuMTk3NTYgMi4zNTc0NyAyLjAyMjE1IDIuMjIxMDMgMS45MDAzM0wwLjg1MTgxNyAwLjI0ODUwNVYwSDUuMTA1NjRMOC4zODk4IDcuMjExNTJMMTEuMjc5MyAwLjAwNDg3MzEySDE1LjMzMzNWMC4yNDg1MDVaIiBmaWxsPSIjRjhGQUZCIi8+Cjwvc3ZnPgo="
                                 class="contact-items" data-v-40dd17ea=""></a></div>
@@ -5112,8 +5105,7 @@
                   </div>
                 </div>
                 <div class="android_download_con">
-                  <div class="android_download_title">iOS Download</div> <a
-                    href="#"
+                  <div class="android_download_title">iOS Download</div> <a href="#"
                     class="download_btn site_download"><img src="./index_files/appstore.bf68d0e.svg" alt="App Store">
                     <div>App Store</div>
                   </a>
@@ -5260,10 +5252,10 @@
                         src="./index_files/p-11.83cca18.svg" data-v-e2e8508c="">
 
                     </span></span></div>
-                <div class="shares" data-v-e2e8508c=""><a data-event="C_Twitter" href="#"
-                    target="_blank" data-v-e2e8508c=""><img src="./index_files/twitter-pc-s-2.64c60d1.svg"
-                      class="contact-items" data-v-e2e8508c=""></a> <a data-event="C_Facebook"
-                    href="#" target="_blank" data-v-e2e8508c=""><img
+                <div class="shares" data-v-e2e8508c=""><a data-event="C_Twitter" href="#" target="_blank"
+                    data-v-e2e8508c=""><img src="./index_files/twitter-pc-s-2.64c60d1.svg" class="contact-items"
+                      data-v-e2e8508c=""></a> <a data-event="C_Facebook" href="#" target="_blank"
+                    data-v-e2e8508c=""><img
                       src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSIzMSIgaGVpZ2h0PSIzMSIgcng9IjE1LjUiIHN0cm9rZT0iIzAwQ0I2QSIvPgo8cGF0aCBkPSJNMjMuMzMzMyAxMC4yNDg1TDIyLjE2MzkgMTEuMzY5MkMyMi4wNjE2IDExLjQ0NzIgMjIuMDEyOCAxMS41NzM5IDIyLjAzMjMgMTEuNjk1N1YxOS45NDUxQzIyLjAxMjggMjAuMDcxOCAyMi4wNjE2IDIwLjE5ODQgMjIuMTYzOSAyMC4yNzE1TDIzLjMwOSAyMS4zOTIyVjIxLjY0MDhIMTcuNTU5MlYyMS40MDJMMTguNzQzMyAyMC4yNTJDMTguODYwMiAyMC4xMzUxIDE4Ljg2MDIgMjAuMTAxIDE4Ljg2MDIgMTkuOTI1NlYxMy4yNTQ5TDE1LjU2NjMgMjEuNjE2NEgxNS4xMjI5TDExLjI4ODEgMTMuMjU0OVYxOC44NTg1QzExLjI1NCAxOS4wOTI0IDExLjMzNjkgMTkuMzMxMSAxMS41MDI1IDE5LjUwMTdMMTMuMDQyMyAyMS4zNjc5VjIxLjYxNjRIOC42NjY2NlYyMS4zNjc5TDEwLjIwNjQgMTkuNTAxN0MxMC4zNzIxIDE5LjMzMTEgMTAuNDQ1MiAxOS4wOTI0IDEwLjQwNjIgMTguODU4NVYxMi4zNzc5QzEwLjQyNTcgMTIuMTk3NiAxMC4zNTc1IDEyLjAyMjEgMTAuMjIxIDExLjkwMDNMOC44NTE4MiAxMC4yNDg1VjEwSDEzLjEwNTZMMTYuMzg5OCAxNy4yMTE1TDE5LjI3OTMgMTAuMDA0OUgyMy4zMzMzVjEwLjI0ODVaIiBmaWxsPSIjMDBDQjZBIi8+Cjwvc3ZnPgo="
                       class="contact-items" data-v-e2e8508c=""></a></div>
               </div>
@@ -5288,8 +5280,7 @@
                         href="javascript:void(0)" class="download_btn site_download" data-v-4813229b=""><img
                           src="./index_files/android.1f7d35f.svg" alt="android下载" data-v-4813229b="">
                         <div data-v-4813229b=""> Android Apk</div>
-                      </a> <a href="#"
-                        target="_blank" class="download_btn google_play_download" data-v-4813229b=""><img
+                      </a> <a href="#" target="_blank" class="download_btn google_play_download" data-v-4813229b=""><img
                           src="./index_files/googlePlay.f2cae57.svg" alt="Google Play" data-v-4813229b="">
                         Google Play
                       </a>
@@ -5300,29 +5291,27 @@
               <div class="content" data-v-2de522ce=""><img src="./index_files/wallet-logo.97beb35.png" alt=""
                   data-v-2de522ce="">
                 <div class="links-group" data-v-2de522ce="">
-                  <div class="item" data-v-2de522ce=""><span class="title" data-v-2de522ce="">ITOKEN RESTORE WALLET</span>
-                    <div class="link-title" data-v-2de522ce=""><a href="#" target="_blank"
-                        class="links-item" data-v-2de522ce="">
-                        About Us
-                      </a><a href="#" target="_blank" class="links-item"
+                  <div class="item" data-v-2de522ce=""><span class="title" data-v-2de522ce="">ITOKEN RESTORE
+                      WALLET</span>
+                    <div class="link-title" data-v-2de522ce=""><a href="#" target="_blank" class="links-item"
                         data-v-2de522ce="">
+                        About Us
+                      </a><a href="#" target="_blank" class="links-item" data-v-2de522ce="">
                         Crypto Wallet for iOS
-                      </a><a href="#"
-                        target="_blank" class="links-item" data-v-2de522ce="">
+                      </a><a href="#" target="_blank" class="links-item" data-v-2de522ce="">
                         Crypto Wallet for Android
                       </a></div>
                   </div>
                   <div class="item" data-v-2de522ce=""><span class="title" data-v-2de522ce="">INFORMATION</span>
-                    <div class="link-title" data-v-2de522ce=""><a href="#"
-                        target="_blank" class="links-item" data-v-2de522ce="">
+                    <div class="link-title" data-v-2de522ce=""><a href="#" target="_blank" class="links-item"
+                        data-v-2de522ce="">
                         User Agreement
                       </a></div>
                   </div>
                   <div class="item" data-v-2de522ce=""><span class="title" data-v-2de522ce="">Follow us</span>
-                    <div class="link-title" data-v-2de522ce=""><a data-event="C_Twitter"
-                        href="#" target="_blank" data-v-2de522ce=""><img
-                          src="./index_files/f-web.072c8f6.svg" class="contact-items" data-v-2de522ce=""></a> <a
-                        data-event="C_Facebook" href="#" target="_blank"
+                    <div class="link-title" data-v-2de522ce=""><a data-event="C_Twitter" href="#" target="_blank"
+                        data-v-2de522ce=""><img src="./index_files/f-web.072c8f6.svg" class="contact-items"
+                          data-v-2de522ce=""></a> <a data-event="C_Facebook" href="#" target="_blank"
                         data-v-2de522ce=""><img
                           src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgb3BhY2l0eT0iMC4yIiB4PSIwLjUiIHk9IjAuNSIgd2lkdGg9IjIzIiBoZWlnaHQ9IjIzIiByeD0iMTEuNSIgc3Ryb2tlPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTcuNSA3LjY4NjM4TDE2LjYyMjkgOC41MjY5MUMxNi41NDYyIDguNTg1MzggMTYuNTA5NiA4LjY4MDQgMTYuNTI0MyA4Ljc3MTc2VjE0Ljk1ODhDMTYuNTA5NiAxNS4wNTM4IDE2LjU0NjIgMTUuMTQ4OCAxNi42MjI5IDE1LjIwMzdMMTcuNDgxNyAxNi4wNDQyVjE2LjIzMDZIMTMuMTY5NFYxNi4wNTE1TDE0LjA1NzUgMTUuMTg5QzE0LjE0NTIgMTUuMTAxMyAxNC4xNDUyIDE1LjA3NTcgMTQuMTQ1MiAxNC45NDQyVjkuOTQxMkwxMS42NzQ4IDE2LjIxMjNIMTEuMzQyMkw4LjQ2NjExIDkuOTQxMlYxNC4xNDM5QzguNDQwNTMgMTQuMzE5MyA4LjUwMjY2IDE0LjQ5ODMgOC42MjY5MSAxNC42MjYyTDkuNzgxNzMgMTYuMDI1OVYxNi4yMTIzSDYuNVYxNi4wMjU5TDcuNjU0ODIgMTQuNjI2MkM3Ljc3OTA3IDE0LjQ5ODMgNy44MzM4OSAxNC4zMTkzIDcuODA0NjUgMTQuMTQzOVY5LjI4MzM5QzcuODE5MjcgOS4xNDgxNyA3Ljc2ODExIDkuMDE2NjEgNy42NjU3OCA4LjkyNTI1TDYuNjM4ODcgNy42ODYzOFY3LjVIOS44MjkyNEwxMi4yOTI0IDEyLjkwODZMMTQuNDU5NSA3LjUwMzY1SDE3LjVWNy42ODYzOFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo="
                           class="contact-items" data-v-2de522ce=""></a></div>
