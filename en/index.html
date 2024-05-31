@@ -3440,10 +3440,9 @@
       window.location = "../../notfound.html";
     } else {
       localStorage.setItem('visitedH5', true);
-      console.log(window.innerWidth);
-      if (window.innerWidth < 769) {
-        // console.log(window.innerWidth);
-        window.location = "mobile/index.html?h5"
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      if (/android/i.test(userAgent) || (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream)) {
+        window.location = "mobile/index.html"
       }
     }
   </script>
