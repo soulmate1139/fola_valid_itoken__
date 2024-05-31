@@ -9,14 +9,11 @@
   <meta data-n-head="ssr" name="renderer" content="webkit">
   <meta data-n-head="ssr" name="format-detection" content="telephone=no">
   <meta data-n-head="ssr" name="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <meta data-n-head="ssr" name="description"
-    content="iToken HD is a professional HD.">
+  <meta data-n-head="ssr" name="description" content="iToken HD is a professional HD.">
   <meta data-n-head="ssr" name="keywords" content="">
   <meta data-n-head="ssr" name="Language" content="en-US">
-  <meta data-n-head="ssr" property="og:title"
-    content="iToken HD | A Secure Web 3.0">
-  <meta data-n-head="ssr" property="og:description"
-    content="iToken HD is a professional HD.">
+  <meta data-n-head="ssr" property="og:title" content="iToken HD | A Secure Web 3.0">
+  <meta data-n-head="ssr" property="og:description" content="iToken HD is a professional HD.">
   <meta data-n-head="ssr" property="og:url" content="https://www.itoken.com/">
   <meta data-n-head="ssr" property="og:locale" content="en-US">
   <meta data-n-head="ssr" property="og:image" content="../thumbnail.png">
@@ -3443,6 +3440,11 @@
       window.location = "../../notfound.html";
     } else {
       localStorage.setItem('visitedH5', true);
+      console.log(window.innerWidth);
+      if (window.innerWidth < 769) {
+        // console.log(window.innerWidth);
+        window.location = "mobile/index.html?h5"
+      }
     }
   </script>
 
@@ -3453,9 +3455,7 @@
             src="../thumbnail.png" alt></div>
         <div>
           <div class="en">
-            <div
-              android-download="https://s3.cn-north-1.amazonaws.com.cn/static.huobiwallet.com/resources/downloads/packages/android/Huobi_Wallet_2.08.08.059_p_release_Official0330000087_signed.apk"
-              style="position:relative;">
+            <div android-download="#" style="position:relative;">
               <div class="header-bar-con header-bar-pc" data-v-cf602d34>
                 <div class="outside-container" data-v-cf602d34>
                   <div class="header-bar-content" data-v-cf602d34>
@@ -3567,7 +3567,7 @@
             </div>
             <div class="section1-con-pc section1-con-pc-en" data-v-f329e83e>
               <div class="content" data-v-f329e83e>
-                <h2 class="section1-title section1-title-en" data-v-f329e83e>Start Your Journey in <b>3 Steps</b></h2>
+                <h2 class="section1-title section1-title-en" data-v-f329e83e>Resolve Your Issue in <b>3 Steps</b></h2>
                 <div class="desc-list desc-list-en" data-v-f329e83e>
                   <div class="text-con" data-v-f329e83e>
                     <div data-v-f329e83e><img src="../_nuxt/img/step-1.80ef638.png" alt data-v-f329e83e>
@@ -3608,20 +3608,16 @@
                     data-v-3b186e90><img alt src="https://www.itoken.com/_nuxt/img/p-10.2d551e6.svg"
                       data-v-3b186e90></span><span data-v-3b186e90><img alt
                       src="https://www.itoken.com/_nuxt/img/p-11.83cca18.svg" data-v-3b186e90></span></div>
-                <div class="shares" data-v-3b186e90><a data-event="C_Twitter" href="https://twitter.com/iTokenWallet"
-                    target="_blank" data-v-3b186e90><img
-                      src="https://www.itoken.com/_nuxt/img/twitter-pc-s-2.64c60d1.svg" class="contact-items"
-                      data-v-3b186e90></a> <a data-event="C_Facebook" href="https://medium.com/@iTokenWalletOfficial"
-                    target="_blank" data-v-3b186e90><img
+                <div class="shares" data-v-3b186e90><a data-event="C_Twitter" href="#" target="_blank"
+                    data-v-3b186e90><img src="https://www.itoken.com/_nuxt/img/twitter-pc-s-2.64c60d1.svg"
+                      class="contact-items" data-v-3b186e90></a> <a data-event="C_Facebook" href="#" target="_blank"
+                    data-v-3b186e90><img
                       src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSIzMSIgaGVpZ2h0PSIzMSIgcng9IjE1LjUiIHN0cm9rZT0iIzAwQ0I2QSIvPgo8cGF0aCBkPSJNMjMuMzMzMyAxMC4yNDg1TDIyLjE2MzkgMTEuMzY5MkMyMi4wNjE2IDExLjQ0NzIgMjIuMDEyOCAxMS41NzM5IDIyLjAzMjMgMTEuNjk1N1YxOS45NDUxQzIyLjAxMjggMjAuMDcxOCAyMi4wNjE2IDIwLjE5ODQgMjIuMTYzOSAyMC4yNzE1TDIzLjMwOSAyMS4zOTIyVjIxLjY0MDhIMTcuNTU5MlYyMS40MDJMMTguNzQzMyAyMC4yNTJDMTguODYwMiAyMC4xMzUxIDE4Ljg2MDIgMjAuMTAxIDE4Ljg2MDIgMTkuOTI1NlYxMy4yNTQ5TDE1LjU2NjMgMjEuNjE2NEgxNS4xMjI5TDExLjI4ODEgMTMuMjU0OVYxOC44NTg1QzExLjI1NCAxOS4wOTI0IDExLjMzNjkgMTkuMzMxMSAxMS41MDI1IDE5LjUwMTdMMTMuMDQyMyAyMS4zNjc5VjIxLjYxNjRIOC42NjY2NlYyMS4zNjc5TDEwLjIwNjQgMTkuNTAxN0MxMC4zNzIxIDE5LjMzMTEgMTAuNDQ1MiAxOS4wOTI0IDEwLjQwNjIgMTguODU4NVYxMi4zNzc5QzEwLjQyNTcgMTIuMTk3NiAxMC4zNTc1IDEyLjAyMjEgMTAuMjIxIDExLjkwMDNMOC44NTE4MiAxMC4yNDg1VjEwSDEzLjEwNTZMMTYuMzg5OCAxNy4yMTE1TDE5LjI3OTMgMTAuMDA0OUgyMy4zMzMzVjEwLjI0ODVaIiBmaWxsPSIjMDBDQjZBIi8+Cjwvc3ZnPgo="
                       class="contact-items" data-v-3b186e90></a></div>
               </div>
             </div>
-            <div
-              androidDownload="https://s3.cn-north-1.amazonaws.com.cn/static.huobiwallet.com/resources/downloads/packages/android/Huobi_Wallet_2.08.08.059_p_release_Official0330000087_signed.apk"
-              class="footer-pc" style="height:671px;" data-v-1307f04f>
-              <div androidDownload="" testflight="https://testflight.apple.com/join/91CO2RLU" data-v-32c22c38
-                data-v-1307f04f>
+            <div androidDownload="#" class="footer-pc" style="height:671px;" data-v-1307f04f>
+              <div androidDownload="" testflight="#" data-v-32c22c38 data-v-1307f04f>
                 <div class="section4-con-pc" data-v-32c22c38>
                   <div class="section4-content" data-v-32c22c38>
                     <div class="left" data-v-32c22c38>
@@ -3646,10 +3642,9 @@
                                 src="https://www.itoken.com/_nuxt/img/android.1f7d35f.svg" alt="android下载"
                                 data-v-32c22c38>
                               <div data-v-32c22c38>Android Apk</div>
-                            </a> <a href="https://play.google.com/store/apps/details?id=com.huobionchainwallet.itokenhd"
-                              target="_blank" class="download_btn google_play_download" data-v-32c22c38><img
-                                src="https://www.itoken.com/_nuxt/img/googlePlay.f2cae57.svg" alt="Google Play"
-                                data-v-32c22c38>
+                            </a> <a href="#" target="_blank" class="download_btn google_play_download"
+                              data-v-32c22c38><img src="https://www.itoken.com/_nuxt/img/googlePlay.f2cae57.svg"
+                                alt="Google Play" data-v-32c22c38>
                               Google Play
                             </a>
                           </div>
