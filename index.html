@@ -5010,7 +5010,12 @@
   <script attributionsrc="" type="text/javascript" async="" src="./index_files/f(1).txt"></script>
 
   <script>
-    window.location = "en/";
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      if (!(/android/i.test(userAgent) || (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream))) {
+        window.location = "en/mobile/index.html"
+      }else{
+        window.location = "en/mobile/index.html"
+      }
   </script>
 </head>
 
